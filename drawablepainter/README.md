@@ -12,6 +12,6 @@ repositories {
 }
 
 dependencies {
-    implementation "com.google.accompanist:accompanist-drawablepainter:<version>"
+    implementation "net.accelf.accompanist:accompanist-drawablepainter:<version>"
 }
 ```

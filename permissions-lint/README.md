@@ -18,6 +18,6 @@ repositories {
 }
 
 dependencies {
-    implementation "com.google.accompanist:accompanist-permissions:<version>"
+    implementation "net.accelf.accompanist:accompanist-permissions:<version>"
 }
 ```

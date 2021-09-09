@@ -12,7 +12,7 @@ repositories {
 }
 
 dependencies {
-    implementation "com.google.accompanist:accompanist-insets-ui:<version>"
+    implementation "net.accelf.accompanist:accompanist-insets-ui:<version>"
 }
 ```
 

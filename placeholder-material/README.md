@@ -12,7 +12,7 @@ repositories {
 }
 
 dependencies {
-    implementation "com.google.accompanist:accompanist-placeholder-material:<version>"
+    implementation "net.accelf.accompanist:accompanist-placeholder-material:<version>"
 }
 ```
 

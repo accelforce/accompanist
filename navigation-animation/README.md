@@ -12,7 +12,7 @@ repositories {
 }
 
 dependencies {
-    implementation "com.google.accompanist:accompanist-navigation-animation:<version>"
+    implementation "net.accelf.accompanist:accompanist-navigation-animation:<version>"
 }
 ```
 

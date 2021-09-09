@@ -65,4 +65,5 @@ dependencies {
     implementation libs.compose.ui.ui
 }
 
-apply plugin: "com.vanniktech.maven.publish"
+// TODO: Uncomment after supporting multiplatform
+// apply plugin: "com.vanniktech.maven.publish"

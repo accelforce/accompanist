@@ -45,6 +45,7 @@ plugins {
 
 apply plugin: 'org.jetbrains.dokka'
 apply plugin: 'com.dropbox.affectedmoduledetector'
+apply plugin: 'com.vanniktech.maven.publish'
 
 tasks.withType(org.jetbrains.dokka.gradle.DokkaMultiModuleTask).configureEach {
     outputDirectory = rootProject.file('docs/api')
@@ -85,6 +86,12 @@ allprojects {
         def composeSnapshot = libs.versions.composesnapshot.get()
         if (composeSnapshot.length() > 1) {
             maven { url "https://androidx.dev/snapshots/builds/$composeSnapshot/artifacts/repository/" }
+        }
+    }
+
+    plugins.withId("com.vanniktech.maven.publish") {
+        mavenPublish {
+            sonatypeHost = "S01"
         }
     }
 }

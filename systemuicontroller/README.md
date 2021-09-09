@@ -14,7 +14,7 @@ repositories {
 }
 
 dependencies {
-    implementation "com.google.accompanist:accompanist-systemuicontroller:<version>"
+    implementation "net.accelf.accompanist:accompanist-systemuicontroller:<version>"
 }
 ```
 

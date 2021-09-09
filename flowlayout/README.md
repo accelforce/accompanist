@@ -30,7 +30,7 @@ repositories {
 }
 
 dependencies {
-    implementation "com.google.accompanist:accompanist-flowlayout:<version>"
+    implementation "net.accelf.accompanist:accompanist-flowlayout:<version>"
 }
 ```
 

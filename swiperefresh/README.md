@@ -12,7 +12,7 @@ repositories {
 }
 
 dependencies {
-    implementation "com.google.accompanist:accompanist-swiperefresh:<version>"
+    implementation "net.accelf.accompanist:accompanist-swiperefresh:<version>"
 }
 ```
 

@@ -25,7 +25,7 @@ repositories {
 }
 
 dependencies {
-    implementation "com.google.accompanist:accompanist-appcompat-theme:<version>"
+    implementation "net.accelf.accompanist:accompanist-appcompat-theme:<version>"
 }
 ```
 

@@ -104,4 +104,5 @@ dependencies {
     testImplementation libs.robolectric
 }
 
-apply plugin: 'com.vanniktech.maven.publish'
+// TODO: Uncomment after supporting multiplatform
+// apply plugin: 'com.vanniktech.maven.publish'

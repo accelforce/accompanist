@@ -12,7 +12,7 @@ repositories {
 }
 
 dependencies {
-    implementation "com.google.accompanist:accompanist-pager-indicators:<version>"
+    implementation "net.accelf.accompanist:accompanist-pager-indicators:<version>"
 }
 ```
 

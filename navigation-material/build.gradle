@@ -95,4 +95,5 @@ dependencies {
     androidTestImplementation libs.androidx.test.rules
 }
 
-apply plugin: "com.vanniktech.maven.publish"
+// TODO: Uncomment after supporting multiplatform
+// apply plugin: "com.vanniktech.maven.publish"

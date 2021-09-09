@@ -28,7 +28,7 @@ repositories {
 }
 
 dependencies {
-    implementation "com.google.accompanist:accompanist-insets:<version>"
+    implementation "net.accelf.accompanist:accompanist-insets:<version>"
 }
 ```
 
