@@ -1,5 +1,6 @@
 /*
  * Copyright 2021 The Android Open Source Project
+ * Copyright 2021 Team AccelForce
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -56,7 +57,7 @@ private const val DragMultiplier = 0.5f
  * @param isRefreshing the value for [SwipeRefreshState.isRefreshing]
  */
 @Composable
-fun rememberSwipeRefreshState(
+public fun rememberSwipeRefreshState(
     isRefreshing: Boolean
 ): SwipeRefreshState {
     return remember {
@@ -76,7 +77,7 @@ fun rememberSwipeRefreshState(
  * @param isRefreshing the initial value for [SwipeRefreshState.isRefreshing]
  */
 @Stable
-class SwipeRefreshState(
+public class SwipeRefreshState(
     isRefreshing: Boolean,
 ) {
     private val _indicatorOffset = Animatable(0f)
@@ -85,18 +86,18 @@ class SwipeRefreshState(
     /**
      * Whether this [SwipeRefreshState] is currently refreshing or not.
      */
-    var isRefreshing: Boolean by mutableStateOf(isRefreshing)
+    public var isRefreshing: Boolean by mutableStateOf(isRefreshing)
 
     /**
      * Whether a swipe/drag is currently in progress.
      */
-    var isSwipeInProgress: Boolean by mutableStateOf(false)
+    public var isSwipeInProgress: Boolean by mutableStateOf(false)
         internal set
 
     /**
      * The current offset for the indicator, in pixels.
      */
-    val indicatorOffset: Float get() = _indicatorOffset.value
+    public val indicatorOffset: Float get() = _indicatorOffset.value
 
     internal suspend fun animateOffsetTo(offset: Float) {
         mutatorMutex.mutate {
@@ -219,7 +220,7 @@ private class SwipeRefreshNestedScrollConnection(
  * @param content The content containing a scroll composable.
  */
 @Composable
-fun SwipeRefresh(
+public fun SwipeRefresh(
     state: SwipeRefreshState,
     onRefresh: () -> Unit,
     modifier: Modifier = Modifier,

@@ -1,5 +1,6 @@
 /*
  * Copyright 2021 The Android Open Source Project
+ * Copyright 2021 Team AccelForce
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -43,6 +44,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.util.lerp
+import coil.annotation.ExperimentalCoilApi
 import coil.compose.rememberImagePainter
 import com.google.accompanist.pager.ExperimentalPagerApi
 import com.google.accompanist.pager.HorizontalPager
@@ -83,7 +85,7 @@ private fun Sample() {
     }
 }
 
-@OptIn(ExperimentalPagerApi::class)
+@OptIn(ExperimentalPagerApi::class, ExperimentalCoilApi::class)
 @Composable
 fun HorizontalPagerWithOffsetTransition() {
     val pagerState = rememberPagerState(
@@ -155,6 +157,7 @@ fun HorizontalPagerWithOffsetTransition() {
     }
 }
 
+@OptIn(ExperimentalCoilApi::class)
 @Composable
 private fun ProfilePicture(modifier: Modifier = Modifier) {
     Card(

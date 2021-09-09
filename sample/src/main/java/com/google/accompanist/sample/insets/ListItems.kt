@@ -1,5 +1,6 @@
 /*
- * Copyright 2020 The Android Open Source Project
+ * Copyright 2021 The Android Open Source Project
+ * Copyright 2021 Team AccelForce
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -30,11 +31,13 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.unit.dp
+import coil.annotation.ExperimentalCoilApi
 import coil.compose.rememberImagePainter
 
 /**
  * Simple list item row which displays an image and text.
  */
+@OptIn(ExperimentalCoilApi::class)
 @Composable
 fun ListItem(
     imageUrl: String,
