@@ -1,3 +1,16 @@
+## About this fork
+
+The aim of this fork of [google/accompanist](https://github.com/google/accompanist) is to add compatibilities with Kotlin Multiplatform and [JetBrains Compose](https://github.com/JetBrains/compose-jb).
+
+Currently supporting these packages:
+
+* ⬇️ [Swipe to Refresh](./swiperefresh/)
+
+Issues **only about problems happened while using this fork** will be accepted.
+Feature requests should be posted on original repository.
+
+---
+
 ![Accompanist logo](docs/header.png)
 
 Accompanist is a group of libraries that aim to supplement [Jetpack Compose][compose] with features that are commonly required by developers but not yet available.
