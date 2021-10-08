@@ -48,7 +48,6 @@ import coil.annotation.ExperimentalCoilApi
 import coil.compose.rememberImagePainter
 import com.google.accompanist.pager.ExperimentalPagerApi
 import com.google.accompanist.pager.VerticalPager
-import com.google.accompanist.pager.rememberPagerState
 import com.google.accompanist.sample.AccompanistSampleTheme
 import com.google.accompanist.sample.R
 import com.google.accompanist.sample.randomSampleImageUrl
@@ -97,7 +96,7 @@ private fun Sample() {
             onRefresh = { refreshing = true },
         ) {
             VerticalPager(
-                state = rememberPagerState(pageCount = 10),
+                count = 10,
                 itemSpacing = 8.dp,
                 modifier = Modifier.fillMaxSize(),
             ) { page ->

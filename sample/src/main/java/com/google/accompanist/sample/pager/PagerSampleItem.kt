@@ -29,6 +29,7 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.unit.dp
 import coil.annotation.ExperimentalCoilApi
 import coil.compose.rememberImagePainter
@@ -49,6 +50,7 @@ internal fun PagerSampleItem(
             painter = rememberImagePainter(
                 data = rememberRandomSampleImageUrl(width = 600),
             ),
+            contentScale = ContentScale.Crop,
             contentDescription = null,
             modifier = Modifier.matchParentSize()
         )
