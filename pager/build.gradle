@@ -80,7 +80,9 @@ android {
 }
 
 dependencies {
-    implementation libs.compose.foundation.foundation
+    api libs.compose.foundation.foundation
+    api libs.snapper
+
     implementation libs.napier
 
     // ======================
